@@ -1,0 +1,30 @@
+@import 'common/globalVariables.scss';
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login__box {
+    width: 95%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    .login__error {
+      display: flex;
+      align-items: center;
+      background-color: rgb(255, 160, 160);
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      padding: 2rem 1.5rem;
+    }
+  }
+}

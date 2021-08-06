@@ -1,0 +1,80 @@
+@import 'common/globalVariables.scss';
+
+.timeline__hero {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $theme__bglightgreen;
+  color: #fff;
+  h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+  }
+}
+.timeline {
+  background-color: #fff;
+  min-height: 500px;
+  border-radius: 8px;
+  margin-top: 1.5rem !important;
+  padding: 0.5rem;
+  .timeline__albumContainer {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+    &:hover {
+      background-color: $theme__bglightgray;
+      .timeline__albumName {
+        color: $theme__green;
+      }
+    }
+  }
+
+  .timeline__albumThumbnailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    @media (min-width: $desktop-width) {
+      justify-content: left;
+    }
+  }
+  .timeline__albumCover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    margin-right: 1rem;
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .timeline__albumContent {
+    flex-grow: 1;
+
+    .timeline__albumName {
+      margin-top: 1rem;
+    }
+  }
+  .timeline__albumThumbnails {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  .timeline__moreThumbnails {
+    align-self: flex-end;
+  }
+}

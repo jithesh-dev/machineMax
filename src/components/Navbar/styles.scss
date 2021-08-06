@@ -1,0 +1,17 @@
+@import 'common/globalVariables.scss';
+.navbar {
+  width: 100%;
+  padding: 1rem 0.1rem;
+  background-color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 1rem 0.1rem;
+  }
+}
